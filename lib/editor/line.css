@@ -1,0 +1,14 @@
+/*
+    from: https://github.com/editor-js/inline-code
+*/
+.inline-line {
+    background: rgba(250, 239, 240, 0.78);
+    color: #3765b4;
+    padding: 3px 4px;
+    border-radius: 5px;
+    margin: 0 1px;
+    text-decoration: underline;
+    font-size: 0.86em;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+  }

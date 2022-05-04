@@ -1,0 +1,50 @@
+/*
+    from: https://github.com/editor-js/list/
+          https://github.com/editor-js/link
+*/
+.cdx-list {
+    margin: 0;
+    padding-left: 40px;
+    outline: none;
+}
+.cdx-list__item {
+    padding: 5.5px 0 5.5px 3px;
+    line-height: 1.6em;
+}
+
+.cdx-list--unordered {
+    list-style-type: upper-alpha;
+}
+
+.cdx-list--ordered {
+    list-style-type: upper-alpha;
+}
+
+.cdx-list-settings {
+    display: flex;
+}
+.cdx-settings-button {
+        width: 50%;
+}
+
+/*INPUT */
+.input-ans {
+    margin-left: 8px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.input-ans[contentEditable=true][data-placeholder]::before {
+    position: absolute;
+    content: attr(data-placeholder);
+    color: #707684;
+    font-weight: normal;
+    opacity: 0;
+}
+.input-ans[contentEditable=true][data-placeholder]:empty::before {
+    opacity: 1;
+}
+.input-ans[contentEditable=true][data-placeholder]:empty:focus::before {
+    opacity: 0;
+}
